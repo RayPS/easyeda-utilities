@@ -1,5 +1,5 @@
 swap_copperarea_solidregion = () => {
-  let selections = api('getSelectedIds')
+  const selections = api('getSelectedIds')
   
   if (selections.length) {
     selections = selections.split(',')
