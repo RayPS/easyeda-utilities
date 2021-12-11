@@ -1,0 +1,19 @@
+{
+  "name": "Utilities",
+  "description": "Some of my EasyEDA utilities",
+  "homepage": "https://github.com/RayPS/easyeda-utilities",
+  "version": "1.0",
+  "updatebaseurl": "https://raw.githubusercontent.com/RayPS/easyeda-utilities/extension/",
+  "icons": {
+    "default": "icon.svg",
+    "16": "icon16.png",
+    "24": "icon24.png",
+    "32": "icon32.png"
+  },
+  "locale": "locale.txt",
+  "scripts": [
+    "easyeda-helper.js",
+    "main.js",
+    "module-swap-copperarea-solidregion.js"
+  ]
+}

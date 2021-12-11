@@ -1,0 +1,3 @@
+[zh-cn]
+Swap Between Copper Area & Solid Region = 切换 铺铜/填充
+Please select a shape = 你还没有选中任何东西

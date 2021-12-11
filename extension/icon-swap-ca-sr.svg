@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>swap_ca_sr</title>
+    <defs>
+        <rect id="path-1" x="2" y="2" width="28" height="28"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="32" height="32">
+            <rect x="0" y="0" width="32" height="32" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="swap_ca_sr" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle" stroke="#000000" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="4" xlink:href="#path-1"></use>
+        <path d="M0,0 L32,32 L0,32 L0,0 Z M7.42258142,11.1244813 L2.89520363,17.8173758 L5.94106907,17.4972424 C6.83749293,22.144206 10.9972733,25.4717859 15.7510948,25.3317434 C12.5511693,24.0225525 10.1563952,21.0477413 9.77046413,17.3758527 C9.76056726,17.2816903 9.76267789,17.1898754 9.7555592,17.0963234 L13.2421088,16.7298723 L7.42258142,11.1244813 Z" id="Combined-Shape" fill="#000000"></path>
+        <path d="M25.9373571,15.8170097 C25.5315839,11.1018009 21.742418,7.35763432 17,7 C20.0455483,8.63650233 22.1162512,11.8453392 22.1162512,15.5374536 C22.1162512,15.6321347 22.1045548,15.723226 22.1018557,15.8170097 L18.5961012,15.8170097 L23.7978257,22 L29,15.8170097 L25.9373571,15.8170097 Z" id="Path" fill="#000000" fill-rule="nonzero" transform="translate(23.000000, 14.500000) rotate(-6.000000) translate(-23.000000, -14.500000) "></path>
+    </g>
+</svg>
