@@ -12,11 +12,13 @@
   },
   "locale": "locale.txt",
   "scripts": [
+    "htm.standalone.umd.js",
     "util-swap-copperarea-solidregion.js",
     "easyeda-helper.js",
     "main.js"
   ],
   "#deps_source": {
+    "htmpreact": "https://unpkg.com/htm/preact/standalone.umd.js",
     "helper": "https://raw.githubusercontent.com/xsrf/easyeda-labelmaker/refs/heads/master/extension/easyeda-helper.js"
   }
 }
