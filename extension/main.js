@@ -1,12 +1,10 @@
-const extensionId = 'extension-utilities-1.0'.split('-')[1]; // this format is needed to set the Extension ID during install
+const extensionId = 'extension-utilities-id'.split('-')[1]; // this format is needed to set the Extension ID during install
 const instance = easyeda.extension.instances[extensionId];
 const manifest = instance.manifest;
 const Helper = instance.Helper;
 
 api('createCommand', {
-  'extension-utilities-swap_ca_sr' : () => {
-    swap_copperarea_solidregion();
-  },
+  'util_swap_copperarea_solidregion' : instance.util_swap_copperarea_solidregion,
   'extension-utilities-github' : () => {
     window.open(manifest.homepage, '_blank');
   },
@@ -19,7 +17,7 @@ api('createToolbarButton', {
 	menu:[
 		{
 			text: 'Swap Between Copper Area & Solid Region', 
-			cmd: 'extension-utilities-swap_ca_sr', 
+			cmd: 'util_swap_copperarea_solidregion', 
 			title: 'Swap Between Copper Area & Solid Region',
 			icon: api('getRes', {file: 'icon-swap-ca-sr.svg'})
     },
