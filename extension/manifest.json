@@ -15,5 +15,8 @@
     "util-swap-copperarea-solidregion.js",
     "easyeda-helper.js",
     "main.js"
-  ]
+  ],
+  "#deps_source": {
+    "helper": "https://raw.githubusercontent.com/xsrf/easyeda-labelmaker/refs/heads/master/extension/easyeda-helper.js"
+  }
 }

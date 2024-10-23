@@ -1,6 +1,5 @@
 /*
     Common Helper Functions for EasyEDA API
-    Source: https://raw.githubusercontent.com/xsrf/easyeda-extension-example/master/extension/easyeda-helper.js
 */
 const extensionId = Object.entries(easyeda.extension.instances).filter(e => e[1].blobURLs && e[1].blobURLs['manifest.json'] == api('getRes',{file:'manifest.json'}))[0][1].id;
 const instance = easyeda.extension.instances[extensionId];
@@ -103,14 +102,14 @@ instance.Helper = class Helper {
                 console.log(`Update check ok, "${extensionId}" is not up to date`);
                 skipVersion = onlineManifest.version;
                 $.messager.show({
-                    title: 'Update available',
+                    title: `Update Available for <b>${instance.manifest.name}</b>`,
                     msg: `<table>
-                            <tr><td><span class="i18n">Installed</span>:</td><td><span class="i18n">${instance.manifest.name}</span> ${instance.manifest.version}</td></tr>
-                            <tr><td><span class="i18n">Available</span>:</td><td><span class="i18n">${onlineManifest.name}</span> ${onlineManifest.version}</td></tr>
+                            <tr><td>Installed:</td><td>${instance.manifest.name} ${instance.manifest.version}</td></tr>
+                            <tr><td>Available:</td><td>${onlineManifest.name} ${onlineManifest.version}</td></tr>
                         </table>
                         <div class="dialog-button">
-                            <a cmd="${cmdUpdatePage};dialog-close" class="l-btn"><span class="l-btn-left"><span class="l-btn-text i18n">Download</span></span></a>
-                            <a cmd="${cmdUpdateSkip};dialog-close" class="l-btn"><span class="l-btn-left"><span class="l-btn-text i18n">Skip</span></span></a>
+                            <a tabindex="0" cmd="${cmdUpdatePage};dialog-close" class="l-btn"><span class="l-btn-left"><span class="l-btn-text i18n">Download</span></span></a>
+                            <a tabindex="0" cmd="${cmdUpdateSkip};dialog-close" class="l-btn"><span class="l-btn-left"><span class="l-btn-text i18n">Skip Version</span></span></a>
                         </div>
                         `,
                     height: 'auto',
@@ -124,3 +123,5 @@ instance.Helper = class Helper {
     }
 
 }
+
+console.log(`EasyEDA Helper loaded for extension "${extensionId}"`);
