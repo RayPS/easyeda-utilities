@@ -13,8 +13,8 @@
   "locale": "locale.txt",
   "scripts": [
     "htm.standalone.umd.js",
-    "util-swap-copperarea-solidregion.js",
     "easyeda-helper.js",
+    "util-swap-copperarea-solidregion.js",
     "main.js"
   ],
   "#deps_source": {
