@@ -14,6 +14,7 @@
   "scripts": [
     "htm.standalone.umd.js",
     "easyeda-helper.js",
+    "util-create-rounded-rectangle.js",
     "util-swap-copperarea-solidregion.js",
     "main.js"
   ],

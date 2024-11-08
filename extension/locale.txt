@@ -1,3 +1,4 @@
 [zh-cn]
-Swap Between Copper Area & Solid Region = 切换 铺铜/填充
-Please select a shape = 你还没有选中任何东西
+Warning = 警告
+Swap Between Copper Area & Solid Region = 在铺铜与填充之间切换
+Create Rounded Rectangle from Rectangle = 从矩形创建圆角矩形
