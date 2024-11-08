@@ -8,7 +8,10 @@ Some EasyEDA utilities I made to improve my workflow, feel free to use it or sub
 
 <img src="1.gif" width="463px"/>
 
-#### 2. more will be adding here soon :)
+#### 2. Create Rounded Rectangle from Rectangle
+![](2.png)
+
+#### 3. more feature will be added soon...
 
 ## Download
 > [Click here to download](https://github.com/RayPS/easyeda-utilities/releases/download/latest/extension.zip)
@@ -18,5 +21,3 @@ Some EasyEDA utilities I made to improve my workflow, feel free to use it or sub
 Extract the downloaded zip file then do the following steps...
 
 <img src="install.png" width="368px"/>
-
-
