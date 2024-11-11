@@ -16,4 +16,6 @@ jobs:
       with:
         artifacts: "extension.zip"
         tag: "latest"
+        allowUpdates: true
+        makeLatest: true
         token: ${{ secrets.GITHUB_TOKEN }}
