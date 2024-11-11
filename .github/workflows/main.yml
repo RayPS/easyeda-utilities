@@ -1,5 +1,7 @@
 name: Archive Release
-on: []
+on:
+  schedule:
+    - cron: "0 0 31 2 *"
 jobs:
   build:
     runs-on: ubuntu-latest
