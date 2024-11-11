@@ -250,7 +250,9 @@ class RoundRect extends Component {
         })
         
         $('#attr-main').on("change", () => {
-            const unit = $('#attr-main select[name="attr-pcbcanvas-unit"]').val() ==  "mil" ? "mil" : "mm";
+            const unsafe_unitVal = $('#attr-main select[name="attr-pcbcanvas-unit"]').val()
+            if (!unsafe_unitVal) return
+            const unit = unsafe_unitVal ==  "mil" ? "mil" : "mm";
             const convert = (value) => parseFloat(api('unitConvert', { type: unit == 'mil' ? 'mm2mil' : 'mil2mm', value }).toFixed(3))
             if (unit !== this.state.unit) {
                 this.setState({
