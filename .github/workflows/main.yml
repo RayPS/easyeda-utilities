@@ -11,3 +11,8 @@ jobs:
         type: 'zip'
         path: 'extension'
         filename: 'extension.zip'
+    - name: Upload Release
+      uses: ncipollo/release-action@v1.14.0
+      with:
+        artifacts: "extension.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
