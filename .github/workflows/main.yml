@@ -1,7 +1,5 @@
 name: Archive Release
-on:
-  schedule:
-    - cron: "0 0 31 2 *"
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
