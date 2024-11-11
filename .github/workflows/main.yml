@@ -1,0 +1,15 @@
+name: Archive Release
+on:
+  schedule:
+    - cron: "0 0 31 2 *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.5
+      with:
+        type: 'zip'
+        path: 'extension'
+        filename: 'extension.zip'
